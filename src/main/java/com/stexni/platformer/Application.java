@@ -10,6 +10,8 @@ public class Application {
 
     public static void main(String[] args) {
         LOGGER.debug("LWJGL Version: {}", getLWJGLVersion());
+
+        new StdOutRenderer().render(new World());
     }
 
     public static String getLWJGLVersion() {
